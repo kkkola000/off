@@ -1,0 +1,11 @@
+-- Новый пример таблицы
+CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    rostov_stock INTEGER NOT NULL,
+    moscow_stock INTEGER NOT NULL
+);
+
+-- Пример начальных данных
+INSERT INTO products (name, rostov_stock, moscow_stock) VALUES ('Товар 1', 15, 10);
+INSERT INTO products (name, rostov_stock, moscow_stock) VALUES ('Товар 2', 20, 5);
